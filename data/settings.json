@@ -1,0 +1,30 @@
+{
+  "game_dir": "",
+  "assets": "Dread Delusion_Data/resources.assets",
+  "work_dir": "work",
+  "out_dir": "out",
+  "target_column": "English",
+  "blacklist": [
+    "delusionItemData_Master",
+    "delusionPlayerHouse_Upgrades",
+    "delusionAlchemyComboData_Master",
+    "credits_Eng"
+  ],
+  "fonts": {
+    "alagard_by_pix3m-d6awiwp": "fonts/alagard_cyr.ttf",
+    "_bitmap_font____romulus_by_pix3m-d6aokem": "fonts/romulus_cyr.ttf",
+    "PerfectDOSVGA437": "fonts/dos_cyr.ttf"
+  },
+  "tmp": {
+    "asset": "Alagard_TMP",
+    "source_font": "alagard_by_pix3m-d6awiwp",
+    "atlas_texture": "Alagard_TMP Atlas",
+    "atlas_size": 1024,
+    "old_atlas_size": 512
+  },
+  "menu_text": {
+    "source": "Dread Delusion_Data/StreamingAssets/MenuText/menuText_en.json",
+    "table": "generalData_AllLanguages",
+    "language": "en"
+  }
+}

@@ -1,0 +1,253 @@
+# ключ	[колонка]	перевод
++ {{A}} Agility	+ {{A}} Ловкость
++ {{A}} Attack	+ {{A}} Атака
++ {{A}} Barter	+ {{A}} Обмен
++ {{A}} Charm	+ {{A}} Обаяние
++ {{A}} Defence	+ {{A}} Защита
++ {{A}} Guile	+ {{A}} Хитрость
++ {{A}} Lockpick	+ {{A}} Взлом
++ {{A}} Lore	+ {{A}} Познание
++ {{A}} Might	+ {{A}} Могущество
++ {{A}} Persona	+ {{A}} Личность
++ {{A}} Spellcast	+ {{A}} Колдовство
++ {{A}} Wisdom	+ {{A}} Мудрость
+...and worse.	...и кое-чем похуже.
+...but reality itself.	...но и саму реальность.
+...but will those dreams kindle	...Но разожгут ли эти сны
+...in the folly of Delusion?	...в безумии Заблуждения?
+...maintains but a paltry presence.	...удерживает лишь жалкое присутствие.
+...yearning for their lost mortality.	...тоскуя по утраченной смертности.
+<#DEAF00><i>The character looks as if he is about to ask you for a magical item.</i></color> You must go and get the <#FF251A>Magical Item.</color>\n\n<font\	"Symbola SDF"><size\=50>🜳 🜴 🜶 🜹 🜺 🜻 🜼 🜽 🝁 🝂  🝧</font></size>\n=<#DEAF00><i>Персонаж выглядит так, как будто он собирается попросить у вас волшебный предмет.</i></color> Вы должны пойти и получить <#FF251A>Волшебный предмет.</color>\n\n<font\="Symbola SDF"><size\=50>🜳 🜴 🜶 🜹 🜺 🜻 🜼 🜽 🝁 🝂  🝧</font></size>\n
+<<He looks at you fearfully, then wheezes:>>##I won't tell but... if they come looking for you, I won't hide you.	<<Он смотрит на вас со страхом, затем хрипит:>>##Я не скажу, но... если они придут искать тебя, я не стану тебя прятать.
+A	А
+Accept	Принять
+Action	Действие
+Adieu, madame.	Прощайте, мадам.
+Airship 1	Корабль 1
+Airship 2	Корабль 2
+All these regions have their part to play	Всем этим землям предстоит сыграть роль
+Are you sure?	Вы уверены?
+Ascend	Поднять
+Attack	Атака
+Automatic	Автоматически
+Back	Назад
+Binding '{0}'.	Назначение '{0}'.
+Block	Блок
+Boost	Ускорение
+But it begins fathoms below in the underlands	Но начинается она в глубинах нижних земель
+Button East	Вправо
+Button North	Вверх
+Button South	Вниз
+Button West	Влево
+Cancel	Отмена
+Cap Framerate	Ограничение частоты кадров
+Character Creation	Создание персонажа
+Circle	Круг
+Context Menu	Контекстное меню
+Control	Ctrl
+Controller	Контроллер
+Cross	Крест
+Crouch	Присесть
+D-Pad Down	Вниз
+D-Pad Left	Влево
+D-Pad Right	Вправо
+D-Pad Up	Вверх
+D-Pad/Down	Вниз
+D-Pad/Left	Влево
+D-Pad/Right	Вправо
+D-Pad/Up	Вверх
+Delete	Удалить
+Descend	Опустить
+Dodge	Уклонение
+Door is locked. You must find a key.	Дверь заперта.\nВы должны найти ключ.
+Down Arrow	Стрелка вниз
+En garde!	К бою!
+Endless\nEndlessTown	Вечные\nГород Вечных
+Endless\nNone	Вечные\nНет
+Escape	Esc
+Exit	Выход
+Few would guess that our fate would be	Немногие догадываются, что наша судьба
+Forward	Вперёд
+Full screen	Полноэкранный
+Geoff the peasant	Джефф крестьянин
+HARD	СЛОЖНО
+Hold or Tap D-Pad Down	Держать/нажать Вниз
+Hold or Tap D-Pad Right	Держать/нажать Вправо
+Hold or Tap D-Pad/Down	Держать/нажать Вниз
+Hold or Tap Q	Держать/нажать Q
+Hold or Tap or Press L2	Держать/нажать L2
+Hold or Tap or Press LMB	Держать/нажать ЛКМ
+Hold or Tap or Press R2	Держать/нажать R2
+Hold or Tap or Press RMB	Держать/нажать ПКМ
+Hold or Tap or Press Right Trigger	Держать/нажать Правый триггер
+Holster Weapon	Убрать Оружие
+I hear they're sold out around Hallow Town. Too many adventurers and merchants passing through I suppose.##If you need a [[compass]], you'll have better luck in a rural place like [[Pwyll Village]]...	Говорят, в окрестностях Хэллоу-Тауна их все раскупили. Слишком много приключенцев и торговцев проходит мимо, полагаю.##Если вам нужен [[компас]], удача вернее улыбнётся в глухом месте вроде [[деревни Пуилл]]...
+I'm not going to die in that fucking dungeon! Not for anyone! I'm a fucking human being!##<<He spits on the floor, his mucus thick and yellowish.>>	Я не собираюсь сдохнуть в этой грёбаной темнице! Ни за кого! Я грёбаный человек!##<<Он сплёвывает на пол, его мокрота густая и желтоватая.>>
+In the desolate endless realm	В пустынных пределах Вечных
+Interact	Использовать
+Inventory	Инвентарь
+Invert Y Axis	Инверсия оси Y
+It is here that a secret waits	Именно здесь ждёт тайна,
+It was a long time ago now. They told me it was manual labor, but the type that gets you hanged by the inquisition. They didn't tell me the location or the client, and I'd never heard of the [[Coven of the Mollusc.]].##Supposedly, all I had to do was get on an airship, do the work, not ask questions, take the money, go home and shut the fuck up about it forever.	Это было давно. Мне сказали, что это ручной труд, но такой, за который инквизиция вешает. Мне не сказали ни место, ни заказчика, и я никогда не слышал о [[Ковене Моллюска.]].##Вроде бы мне нужно было всего лишь сесть на дирижабль, сделать работу, не задавать вопросов, взять деньги, пойти домой и навсегда заткнуться об этом.
+Item	Предмет
+Jump	Прыжок
+Keyboard	Клавиатура
+LS X	Левый стик X
+LS Y	Левый стик Y
+Language	Язык
+Left Alt	Левый Alt
+Left Arrow	Стрелка влево
+Left Bumper	LB
+Left Button	Левая кнопка
+Left Control	Левый Ctrl
+Left Shift	Левый Shift
+Left Shoulder	LB
+Left Stick	Левый стик
+Left Stick Press	Нажать левый стик
+Left System	Левый Win
+Left Trigger	Левый триггер
+Left/Right	Влево/Вправо
+Line 1: enemy killed.\nLine 2: enemy killed 2.\nLine 3: enemy killed 3.\nLine 4: enemy killed 3.\nLine 5: enemy killed 3.\nLine 6: enemy killed 3.\nLine 7: enemy killed 3.dfsdsfs	Строка 1: враг убит.\nСтрока 2: враг убит 2. Линия 3: Враг убит 3. Линия 4: Враг убит 3. Линия 5: Убит враг 3. Линия 6: Враг убит 3. Линия 7: Враг убит 3.dfsdsfs
+Lost {0} coin.	Потеряна {0} монета.
+Lost {0} coins.	Потеряно {0} монет.
+M	М
+Map	Карта
+Master Region\nSubregion\nWorld State\nGame State\nPlayer State	Master Region Subregion World State Game State Player State State
+Menu	Меню
+Menus	Меню
+Middle Button	Средняя кнопка
+Move	Двигаться
+Movement	Движение
+NORMAL	НОРМА
+Next	Далее
+No	Нет
+None\nNone\nNewGame\nCINEMATIC\nIdle	Нет ни одного нового кинематографического холостого хода
+Numpad 1	Numpad 1
+On these uncanny islands	На этих странных островах
+Or will we burn	Или мы сгорим
+Our world is long since shattered	Наш мир давно расколот
+Page Down	Стр вниз
+Page Left	Стр влево
+Page Right	Стр вправо
+Page Up	Стр вверх
+PageLeft	Стр Влево
+PageRight	Стр Вправо
+Pilfered {0} coin.	Украдена {0} монета.
+Pilfered {0} coins.	Украдено {0} монет.
+Pilfered {0} lockpick.	Украдена {0} отмычка.
+Pilfered {0} lockpicks.	Украдено {0} отмычек.
+Press Escape to cancel	Нажмите -Escape для отмены
+Press Start to cancel	Нажмите Start для отмены
+Press {0} to cancel	Нажмите {0} для отмены
+Q	Q.
+Quit	Выйти
+RMB	ПКМ
+RS X	Правый стик X
+RS Y	Правый стик Y
+Recenter Camera	Сброс камеры
+RecenterCamera	Сброс камеры
+Reset	✖
+Reset All	Сбросить все
+Retro Resolution	Ретро-разрешение
+Return	Назад
+Reverse	Реверс
+Right Alt	Правый Alt
+Right Arrow	Стрелка вправо
+Right Bumper	RB
+Right Button	Правая кнопка
+Right Control	Правый Ctrl
+Right Shift	Правый Shift
+Right Shoulder	RB
+Right Stick Press	Нажать правый стик
+Right System	Правый Win
+Right Trigger	Правый триггер
+Scope	Объем
+Scroll Wheel	Колесо мыши
+Selection	Выбор
+Sky Pirate Caxton Frost	Небесный пират Кэкстон Фрост
+Slot 1	Слот 1
+Slot 2	Слот 2
+Slot 3	Слот 3
+Slot One	Слот один
+Slot Three	Слот три
+Slot Two	Слот два
+Space	Пробел
+Spell	Магия
+Sprint	Ускорение
+Square	Квадрат
+Starting\nNone	Начать\nНет
+Switch Item	Предмет
+Switch Spell	Магия
+Switch Weapon	Оружие
+SwitchItem	Предмет
+SwitchSpell	Магия
+SwitchWeapon	Оружие
+Tilt Down	Наклон вниз
+Tilt Up	Наклон вверх
+TiltDown	Вниз
+TiltUp	Вверх
+Title Screen	Главный экран
+Triangle	Треугольник
+Under their negligent gaze	Под их небрежным взором
+Up Arrow	Стрелка вверх
+Up/Down	Вверх/Вниз
+Vision trader?	Торговец видениями?
+Waiting for Axis input...	В ожидании ввода ...
+Waiting for Button input...	В ожидании ввода ...
+Waiting for input...	Ожидание ввода...
+While the clockwork kingdom	Пока часовое королевство,
+With an airship in your possession, you are now a veritable sky captain. ##You may cast the [[Emergency Airship Reembarkation]] spell to return to your airship at any time. Do this if you become stranded away from your ship. ##You may disembark your airship anywhere, but it is often wise to do so at [[Airship Docks]], where you can interact with [[Airship Stations]] to upgrade and modify your ship. To purchase new upgrades, visit the different [[Airship Guild]] members who are often found at Docks. ##If you disembark while flying above solid ground, your airship will [[drop anchor]]. Interact with the anchor to [[descend]] or [[ascend]] promptly. ##You should also check the [[Controls]] menu to familiarise yourself with how the airship handles.	Теперь у вас есть дирижабль, и вы настоящий небесный капитан. ##Вы можете произнести заклинание [[Экстренное возвращение на дирижабль]], чтобы в любой момент вернуться на свой корабль. Сделайте это, если окажетесь вдали от него. ##Вы можете покинуть дирижабль где угодно, но лучше делать это на [[Воздушных причалах]], где можно взаимодействовать с [[Воздушными станциями]], чтобы улучшать и изменять корабль. Чтобы купить новые улучшения, обратитесь к разным членам [[Гильдии воздухоплавателей]], которых часто можно встретить на причалах. ##Если вы покинете дирижабль, летя над твердой землей, он [[бросит якорь]]. Взаимодействуйте с якорем, чтобы быстро [[спуститься]] или [[подняться]]. ##Также загляните в меню [[Управление]], чтобы ознакомиться с управлением дирижаблем.
+X	Х
+Y	У
+Yes	Да
+Your Airship	Ваш дирижабль
+Your Past	Ваше прошлое
+[ACCEPT]	[ПРИНЯТЬ]
+[Actions]	[Действия]
+[Airship 1]	[Корабль 1]
+[Airship 2]	[Корабль 2]
+[Best Record:]	[Лучшая запись:]
+[CLEAR]	[ОЧИСТИТЬ]
+[CREATE]	[СОЗДАТЬ]
+[Controller]	[Контроллер]
+[Controls]	[Управление]
+[Guile]	[Хитрость]
+[Keyboard]	[Клавиатура]
+[Menus]	[Меню]
+[Might]	[Могущество]
+[Movement]	[Движение]
+[Options]	[Настройки]
+[Persona]	[Личность]
+[Quit]	[Выйти]
+[Return]	[Назад]
+[Selection]	[Выбор]
+[Title Screen]	[Главный экран]
+[Wisdom]	[Мудрость]
+\r\n{{A}} Damage\r\n	\r\n{{A}} Урон\r\n
+a ruinous wasteland	гибельной пустоши,
+an almost forgotten archipelago	почти забытом архипелаге
+burn brighter than any.	горят ярче всех.
+but hope still flickers	но надежда всё ещё теплится
+by someone whose dreams	тому, чьи сны
+decided upon the Oneiric Isles	решится на Онейрических островах
+in decrepit mausoleums	в обветшалых мавзолеях
+in our darkest dreams.	в наших самых тёмных снах.
+in this unfolding story.	в разворачивающейся истории.
+into a radiant destiny?	сияющее предназначение?
+of its manufactured monarch	своего рукотворного монарха,
+of the southern skyrealms.	южных небесных пределов.
+poor souls languish undying	бедные души томятся, не умирая,
+power-drunk after slaughtering	опьянённый властью после заклания
+ruled by the crooked logic	управляемое кривой логикой
+strives to transform not just the realm	стремится преобразить не только край,
+teem with cutthroats... cultists	кишат головорезами... культистами
+the Apostatic Union	Союз Отступников,
+the deep forests and dark places	дремучие леса и тёмные места
+their once exalted gods	своих некогда возвышенных богов,
+to be uncovered	которую предстоит раскрыть
+where none can draw breath for long.	где никто не может долго дышать.
+{0} coin saved. Bargain!	{0} монета сэкономлена. Выгодная сделка!
+{0} coins saved. Bargain!	{0} монет сэкономлено. Выгодная сделка!
+Слот Два - 0 Иллюзии\nNORMAL	Слот Два - 0 Иллюзии\nНОРМА
+Слот Один - 2 Иллюзии\nNORMAL	Слот Один - 2 Иллюзии\nНОРМА
+Слот Три - 0 Иллюзии\nHARD	Слот Три - 0 Иллюзии\nСЛОЖНО
