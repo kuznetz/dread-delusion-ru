@@ -8,6 +8,7 @@ import json
 import os
 import re
 import struct
+from collections import Counter
 
 CYR = re.compile("[\u0400-\u04FF]")
 CYR_MARKER = "здоров".encode("utf-8")   # признак уже переведённого файла
@@ -144,6 +145,42 @@ def target_columns(table, column_name="English"):
     return list(range(1, len(table["header"])))
 
 
+def data_rows(table):
+    """Непустые строки таблицы (у которых есть ключ)."""
+    return [cells for cells in table["rows"] if cells and cells[0].strip()]
+
+
+def key_width(table, limit=3):
+    """Сколько первых колонок образует ключ строки.
+
+    В большинстве таблиц первая колонка уникальна. Но есть таблицы, где она
+    повторяется: в `delusionTasks_allLanguages` первая колонка — номер стадии,
+    и одинаковые номера встречаются во всех задачах (40 строк с ID «10»).
+    Тогда ключом становится пара «вторая колонка|первая» (parent|ID), иначе
+    перевод одной задачи разъезжается по всем остальным.
+    """
+    rows = data_rows(table)
+    if not rows:
+        return 1
+    width = 1
+    max_width = min(limit, len(table["header"]))
+    while width < max_width:
+        keys = [row_key(cells, width) for cells in rows]
+        if len(set(keys)) == len(keys):
+            return width
+        width += 1
+    return width
+
+
+def row_key(cells, width=1, sep="|"):
+    """Ключ строки: первая колонка, а при неуникальности — «parent|ID»."""
+    parts = [cells[i].strip() for i in range(min(width, len(cells)))]
+    parts = [p for p in parts if p]
+    if not parts:
+        return ""
+    return sep.join(reversed(parts))
+
+
 # --------------------------------------------------------------- переводы ----
 def load_tsv(path):
     """TSV: `ключ<TAB>перевод` или `ключ<TAB>номер колонки<TAB>перевод`."""
@@ -195,27 +232,46 @@ def load_translations(root, table):
 
 
 def load_dictionary(root):
-    return load_tsv(os.path.join(root, "data", "dictionary.tsv"))
+    """Словарь «английский текст -> перевод»: ключ — сам текст, без колонки."""
+    raw = load_tsv(os.path.join(root, "data", "dictionary.tsv"))
+    return {text: value for (text, _col), value in raw.items()}
 
 
 def apply_translations(table, translations, dictionary, column_name="English"):
     """Проставляет переводы в целевые колонки таблицы.
 
+    Ключ строки берётся составным, если первая колонка не уникальна (см.
+    `key_width`), поэтому перевод не может попасть в чужую задачу. Короткий
+    ключ из одной первой колонки принимается только тогда, когда такая строка
+    в таблице единственная.
+
     Возвращает (сколько ячеек заменено, сколько ключей перевода не пригодилось).
     """
     cols = target_columns(table, column_name)
+    width = key_width(table)
+    plain_count = Counter(cells[0].strip() for cells in data_rows(table))
     used_keys = set()
     changed = 0
     for cells in table["rows"]:
-        if not cells:
+        if not cells or not cells[0].strip():
             continue
-        key = cells[0].strip()
+        full = row_key(cells, width)
+        candidates = [full]
+        plain = cells[0].strip()
+        if width > 1 and plain_count.get(plain, 0) == 1:
+            candidates.append(plain)
         for col in cols:
             if len(cells) <= col:
                 continue
-            ru = translations.get((key, col))
-            if ru is None:
-                ru = translations.get((key, None))
+            ru = None
+            hit = None
+            for key in candidates:
+                ru = translations.get((key, col))
+                if ru is None:
+                    ru = translations.get((key, None))
+                if ru is not None:
+                    hit = key
+                    break
             if ru is None:
                 # точное совпадение английского текста по общему словарю
                 ru = dictionary.get(cells[col].strip())
@@ -224,7 +280,8 @@ def apply_translations(table, translations, dictionary, column_name="English"):
             if cells[col] != ru:
                 cells[col] = ru
                 changed += 1
-            used_keys.add(key)
+            if hit:
+                used_keys.add(hit)
     stale = len({k for k, _ in translations} - used_keys)
     return changed, stale
 

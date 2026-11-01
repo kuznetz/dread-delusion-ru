@@ -81,6 +81,7 @@ def main():
                 report.write(f"{table_name}: ключей перевода без строки в игре — {stale}\n")
 
         cols = pipeline.target_columns(table, cfg["target_column"])
+        width = pipeline.key_width(table)
         translated_cols = {col for _, col in translations if col is not None}
         if translated_cols:
             cols = [c for c in cols if c in translated_cols] or cols
@@ -96,7 +97,8 @@ def main():
             if not has_ru:
                 sample = cells[cols[0]] if len(cells) > cols[0] else ""
                 if sample.strip():
-                    untranslated.append(f"{table_name}|{cells[0].strip()}|{sample[:80]}")
+                    untranslated.append(
+                        f"{table_name}|{pipeline.row_key(cells, width)}|{sample[:80]}")
 
         with io.open(os.path.join(out_dir, fname), "w", encoding="utf-8", newline="") as f:
             f.write(pipeline.table_to_text(table))

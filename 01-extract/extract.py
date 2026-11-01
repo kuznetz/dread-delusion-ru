@@ -58,13 +58,12 @@ def import_translations(src_path, column, blacklist, data_dir):
         if not table:
             continue
         cols = pipeline.target_columns(table, column)
+        width = pipeline.key_width(table)
         pairs = {}
         for cells in table["rows"]:
-            if not cells:
+            if not cells or not cells[0].strip():
                 continue
-            key = cells[0].strip()
-            if not key:
-                continue
+            key = pipeline.row_key(cells, width)
             for col in cols:
                 if len(cells) <= col or not pipeline.has_cyr(cells[col]):
                     continue
